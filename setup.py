@@ -65,7 +65,7 @@ def _get_options():
     """read arguments and creates options
     """
     _cmake_path = find_executable("cmake")
-    _cmake_extra = []
+    _cmake_extra = ["-DPYTHON_LIBRARY=/usr/local/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5m.dylib", "-DPYTHON_INCLUDE_DIR=/usr/local/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/include/python3.5m/", "-DBoost_PYTHON-PY34_LIBRARY_RELEASE=/usr/local/lib/libboost_python3-mt.dylib", "-DBoost_PYTHON-PY34_LIBRARY_DEBUG=/usr/local/lib/libboost_python3-mt.dylib"]
     _cmake_config = 'Release'
 
     _options = []
